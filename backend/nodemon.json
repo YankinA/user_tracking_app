@@ -1,0 +1,5 @@
+{
+  "watch": ["src", ".env", "public", "public/index.js"],
+  "ext": "ts",
+  "exec": "ts-node -r dotenv/config ./src/index.ts"
+}

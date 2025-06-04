@@ -1,0 +1,12 @@
+{
+  "name": "tracker-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "ci": "cd frontend && npm ci && cd ../backend && npm ci",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "cd frontend && npx tsc --watch --rootDir ./src --outDir ./../backend/public",
+    "build": "npm run build --prefix frontend & npm run build --prefix backend && cp frontend/dist/index.js backend/public/index.js",
+    "start": "npm run start --prefix backend",
+    "format": "npx --prefix frontend prettier --write . & npx --prefix backend prettier --write ."
+  }
+}
