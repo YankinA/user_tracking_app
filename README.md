@@ -39,7 +39,7 @@ const isScriptSafe = (scriptContent) => {
 ## Скачивание репозитория
 
 ```sh
-git clone -b implementation https://github.com/fundraiseup-test/51614944-Yankin-Anton.git
+git clone https://github.com/YankinA/user_tracking_app.git
 ```
 
 ## Установка зависимостей
